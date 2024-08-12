@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div
+      class="flex items-center justify-center min-h-screen font-serif bg-pink-100 main"
+    >
+      <div class="px-20">
+        <div class="flex flex-col bg-white rounded-lg md:flex-row">
+          <div class="p-5 sm:p-10 left space-y-7">
+            <h4 class="text-3xl font-bold">Log In</h4>
+            <p>
+              Login to your account to upload or download pictures, videos or
+              music.
+            </p>
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="w-full py-2 border-2 border-gray-200 rounded-sm focus:outline-none placeholder:p-5"
+            />
+            <div
+              class="flex flex-col justify-between space-y-5 md:flex-row btn-container"
+            >
+              <button class="text-center text-teal-500 md:text-left">
+                Forgot Password
+              </button>
+              <button
+                class="inline-block py-2 text-white rounded-md bg-cyan-600 px-7"
+              >
+                Next
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="inline-block w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <hr />
+
+            <p class="text-xs font-thin text-center text-slate-400">
+              or log in with
+            </p>
+
+            <div
+              class="flex flex-col justify-between md:flex-row btn-container gap-y-2"
+            >
+              <button
+                class="flex flex-row items-center justify-center gap-3 px-5 py-2 border rounded-md"
+              >
+                <img src="./images/facebook.png" alt="" class="w-5 h-5" />
+                <span>Facebook</span>
+              </button>
+              <button
+                class="flex flex-row items-center justify-center gap-3 px-5 py-2 border rounded-md"
+              >
+                <img src="./images/google.png" alt="" class="w-5 h-5" />
+                <span>Google</span>
+              </button>
+            </div>
+          </div>
+          <div class="relative hidden right md:block">
+            <img
+              src="./images/image.jpg"
+              alt=""
+              class="w-[400px] h-full block"
+            />
+            <button
+              class="absolute w-10 h-10 text-2xl bg-white rounded-full top-5 right-5"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

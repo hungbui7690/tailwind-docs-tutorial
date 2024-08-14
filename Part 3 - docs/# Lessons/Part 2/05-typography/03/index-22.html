@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Word Break
+    - Utilities for controlling word breaks in an element.
+
+        break-normal	overflow-wrap: normal; word-break: normal;
+        break-words	  overflow-wrap: break-word;
+        break-all	    word-break: break-all;
+        break-keep	  word-break: keep-all;
+
+    -->
+
+    <div class="container">
+      <!-- Use break-normal to only add line breaks at normal word break points. -->
+      <p class="break-normal">pneumonoultramicroscopicsilicovolcanoconiosis</p>
+
+      <!-- Use break-words to add line breaks mid-word if needed. -->
+      <p class="break-words">pneumonoultramicroscopicsilicovolcanoconiosis</p>
+
+      <!-- Use break-all to add line breaks whenever necessary, without trying to preserve whole words. -->
+      <p class="break-all">pneumonoultramicroscopicsilicovolcanoconiosis</p>
+
+      <!-- Use break-keep to prevent line breaks from being applied to Chinese/Japanese/Korean (CJK) text. For non-CJK text break-keep has the same behavior as break-normal. -->
+      <p class="break-keep">
+        抗衡不屈不挠
+        这是一个长词，意思是不畏强暴，奋勇抗争，坚定不移，永不放弃。<span
+          class="font-bold"
+          >这个词通常用来描述那些在面对困难和挑战时坚持自己信念的人，</span
+        >
+        他们克服一切困难，不屈不挠地追求自己的目标。无论遇到多大的挑战，他们都能够坚持到底，不放弃，最终获得胜利。
+      </p>
+    </div>
+  </body>
+</html>

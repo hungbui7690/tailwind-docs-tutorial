@@ -11,7 +11,6 @@
       }
     </script>
     <style>
-      /* (***) đây là component đc tạo bởi tailwind >> khi chưa có đoạn css này sẽ ko thể click vào */
       .toggle-checkbox:checked {
         right: 0;
         border-color: #68d391;
@@ -23,7 +22,7 @@
     <title>Dark Mode</title>
   </head>
   <body>
-    <!-- muốn style ở dark mode >> sử dụng "dark" -->
+    <!-- use "dark:" to style -->
     <div
       class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl"
     >
@@ -53,7 +52,7 @@
     </div>
 
     <script>
-      // (***) document.documentElement === thẻ html
+      // document.documentElement === <html>
       document.getElementById('toggle').addEventListener('change', function () {
         if (this.checked) {
           document.documentElement.classList.add('dark')
@@ -64,7 +63,3 @@
     </script>
   </body>
 </html>
-
-<!-- Credit for toggle button style
-https://tailwindcomponents.com/component/toggle-switch
--->

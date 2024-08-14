@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Gap
+    - Utilities for controlling gutters between grid and flexbox items.
+
+        gap-0	      gap: 0px;
+        gap-x-0	    column-gap: 0px;
+        gap-y-0	    row-gap: 0px;
+        gap-px	    gap: 1px;
+        gap-x-px	  column-gap: 1px;
+        gap-y-px	  row-gap: 1px;
+        gap-0.5	    gap: 0.125rem; /* 2px */
+        gap-x-0.5	  column-gap: 0.125rem; /* 2px */
+        gap-y-0.5	  row-gap: 0.125rem; /* 2px */
+        gap-1	      gap: 0.25rem; /* 4px */
+        gap-x-1	    column-gap: 0.25rem; /* 4px */
+        gap-y-1	    row-gap: 0.25rem; /* 4px */
+        ...
+        gap-80	    gap: 20rem; /* 320px */
+        gap-x-80	  column-gap: 20rem; /* 320px */
+        gap-y-80	  row-gap: 20rem; /* 320px */
+        gap-96	    gap: 24rem; /* 384px */
+        gap-x-96	  column-gap: 24rem; /* 384px */
+        gap-y-96	  row-gap: 24rem; /* 384px */
+
+    -->
+
+    <div class="container">
+      <!-- Use the gap-* utilities to change the gap between both rows and columns in grid and flexbox layouts. -->
+      <div class="grid gap-4 grid-cols-2">
+        <div class="bg-red-500">01</div>
+        <div class="bg-emerald-400">02</div>
+        <div class="bg-sky-400">03</div>
+        <div class="bg-yellow-500">04</div>
+      </div>
+      <br /><br />
+
+      <!-- Use the gap-x-* and gap-y-* utilities to change the gap between columns and rows independently. -->
+      <div class="grid gap-x-8 gap-y-4 grid-cols-3">
+        <div class="bg-red-500">01</div>
+        <div class="bg-emerald-400">02</div>
+        <div class="bg-sky-400">03</div>
+        <div class="bg-yellow-500">04</div>
+      </div>
+    </div>
+  </body>
+</html>

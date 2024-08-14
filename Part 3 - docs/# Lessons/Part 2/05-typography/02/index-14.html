@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Text Decoration
+    - Utilities for controlling the decoration of text.
+
+        underline	      text-decoration-line: underline;
+        overline	      text-decoration-line: overline;
+        line-through	  text-decoration-line: line-through;
+        no-underline	  text-decoration-line: none;
+
+**************************
+
+    Text Decoration Color
+    - Utilities for controlling the color of text decorations.
+
+        decoration-inherit	        text-decoration-color: inherit;
+        decoration-current	        text-decoration-color: currentColor;
+        decoration-transparent	    text-decoration-color: transparent;
+        decoration-black	          text-decoration-color: rgb(0 0 0);
+        decoration-white	          text-decoration-color: rgb(255 255 255);
+        decoration-slate-50	        text-decoration-color: rgb(248 250 252);
+        decoration-slate-100	      text-decoration-color: rgb(241 245 249);
+        .
+        decoration-slate-950	      text-decoration-color: rgb(2 6 23);
+        decoration-gray-50	        text-decoration-color: rgb(249 250 251);
+        decoration-zinc-950
+        decoration-neutral-950	    text-decoration-color: rgb(10 10 10);
+        decoration-stone-950	      text-decoration-color: rgb(12 10 9);
+        decoration-red-950	        text-decoration-color: rgb(69 10 10);
+        decoration-orange-950	      text-decoration-color: rgb(67 20 7);
+        decoration-amber-950	      text-decoration-color: rgb(69 26 3);
+        decoration-yellow-950	      text-decoration-color: rgb(66 32 6);
+        decoration-lime-950	        text-decoration-color: rgb(26 46 5);
+        decoration-green-950	      text-decoration-color: rgb(5 46 22);
+        decoration-emerald-950	    text-decoration-color: rgb(2 44 34);
+        decoration-teal-950	        text-decoration-color: rgb(4 47 46);
+        decoration-cyan-950	        text-decoration-color: rgb(8 51 68);
+        decoration-sky-950	        text-decoration-color: rgb(8 47 73);
+        decoration-blue-950	        text-decoration-color: rgb(23 37 84);
+        decoration-indigo-950	      text-decoration-color: rgb(30 27 75);
+        decoration-violet-950	      text-decoration-color: rgb(46 16 101);
+        decoration-purple-950	      text-decoration-color: rgb(59 7 100);
+        decoration-fuchsia-950	    text-decoration-color: rgb(74 4 78);
+        decoration-pink-950	        text-decoration-color: rgb(80 7 36);
+        decoration-rose-950	        text-decoration-color: rgb(76 5 25);
+
+
+    -->
+
+    <div class="container">
+      <p class="underline">The quick brown fox</p>
+      <p class="overline">The quick brown fox</p>
+      <p class="line-through">The quick brown fox</p>
+      <p class="no-underline">The quick brown fox</p>
+      <p>
+        I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings
+        at
+        <a class="underline decoration-sky-500">My Company, Inc</a>. Outside of
+        work, I like to
+        <a class="underline decoration-pink-500">watch pod-racing</a> and have
+        <a class="underline decoration-indigo-500">light-saber</a> fights.
+      </p>
+      <p>
+        I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings
+        at
+        <a class="underline decoration-sky-500/30">My Company, Inc</a>. Outside
+        of work, I like to
+        <a class="underline decoration-pink-500/30">watch pod-racing</a> and
+        have
+        <a class="underline decoration-indigo-500/30">light-saber</a> fights.
+      </p>
+      <strong class="underline decoration-sky-500/[.33]">DONE</strong>
+    </div>
+  </body>
+</html>

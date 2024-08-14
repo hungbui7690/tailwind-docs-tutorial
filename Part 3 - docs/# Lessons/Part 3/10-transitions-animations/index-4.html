@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Transition Delay
+    - Utilities for controlling the delay of CSS transitions.
+
+        delay-0	      transition-delay: 0s;
+        delay-75	    transition-delay: 75ms;
+        delay-100	    transition-delay: 100ms;
+        delay-150	    transition-delay: 150ms;
+        delay-200	    transition-delay: 200ms;
+        delay-300	    transition-delay: 300ms;
+        delay-500	    transition-delay: 500ms;
+        delay-700	    transition-delay: 700ms;
+        delay-1000	  transition-delay: 1000ms;
+
+    -->
+
+    <div class="container">
+      <button
+        class="transition delay-150 duration-700 ease-in hover:bg-pink-400"
+      >
+        Button A
+      </button>
+      <button
+        class="transition delay-500 duration-700 ease-out hover:bg-pink-400"
+      >
+        Button B
+      </button>
+      <button
+        class="transition delay-1000 duration-700 ease-in-out hover:bg-pink-400"
+      >
+        Button C
+      </button>
+    </div>
+  </body>
+</html>

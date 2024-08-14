@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Place Self
+    - Utilities for controlling how an individual item is justified and aligned at the same time.
+
+        place-self-auto	    place-self: auto;
+        place-self-start	  place-self: start;
+        place-self-end	    place-self: end;
+        place-self-center	  place-self: center;
+        place-self-stretch	place-self: stretch;
+
+    -->
+
+    <div class="container bg-slate-200">
+      <div class="grid grid-cols-3 gap-4 h-60 bg-yellow-50">
+        <div class="place-self-auto bg-red-500 rounded-lg">01</div>
+        <div class="place-self-start bg-emerald-400 rounded-lg">02</div>
+        <div class="place-self-end bg-sky-400 rounded-lg">03</div>
+        <div class="place-self-center bg-yellow-500 rounded-lg">04</div>
+        <div class="place-self-stretch bg-orange-300 rounded-lg">05</div>
+        <div class="bg-violet-300 rounded-lg">06</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

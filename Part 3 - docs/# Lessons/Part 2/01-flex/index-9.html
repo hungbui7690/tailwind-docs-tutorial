@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Align Content
+    - Utilities for controlling how rows are positioned in <multi-row> flex and grid containers.
+
+        content-normal	    align-content: normal;
+        content-center	    align-content: center;
+        content-start	      align-content: flex-start;
+        content-end	        align-content: flex-end;
+        content-between	    align-content: space-between;
+        content-around	    align-content: space-around;
+        content-evenly	    align-content: space-evenly;
+        content-baseline	  align-content: baseline;
+        content-stretch	    align-content: stretch;
+
+    -->
+
+    <div class="container bg-slate-200">
+      <div class="flex content-start h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div class="content-center h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div class="content-end h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div
+        class="content-between h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap"
+      >
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div class="content-around h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div class="content-evenly h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div
+        class="content-stretch h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap"
+      >
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+
+      <div class="content-normal h-56 w-32 flex gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg w-8 h-8">01</div>
+        <div class="bg-emerald-400 rounded-lg w-8 h-8">02</div>
+        <div class="bg-sky-400 rounded-lg w-8 h-8">03</div>
+        <div class="bg-yellow-500 rounded-lg w-8 h-8">04</div>
+        <div class="bg-orange-300 rounded-lg w-8 h-8">05</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

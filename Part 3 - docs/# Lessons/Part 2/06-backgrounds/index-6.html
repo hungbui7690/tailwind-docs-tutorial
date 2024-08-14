@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Background Repeat
+    - Utilities for controlling the repetition of an element's background image.
+
+        bg-repeat	      background-repeat: repeat;
+        bg-no-repeat	  background-repeat: no-repeat;
+        bg-repeat-x	    background-repeat: repeat-x;
+        bg-repeat-y	    background-repeat: repeat-y;
+        bg-repeat-round	background-repeat: round;
+        bg-repeat-space	background-repeat: space;
+
+    -->
+
+    <div
+      class="bg-repeat w-96 h-96"
+      style="background-image: url(./images/cloud.png)"
+    ></div>
+    <br />
+
+    <div
+      class="bg-no-repeat w-96 h-96"
+      style="background-image: url(./images/cloud.png)"
+    ></div>
+    <br />
+
+    <div
+      class="bg-repeat-x w-96 h-96"
+      style="background-image: url(./images/cloud.png)"
+    ></div>
+
+    <div
+      class="bg-repeat-y w-96 h-96"
+      style="background-image: url(./images/cloud.png)"
+    ></div>
+  </body>
+</html>

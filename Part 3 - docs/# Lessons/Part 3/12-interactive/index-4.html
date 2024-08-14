@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Resize
+    - Utilities for controlling how an element can be resized.
+
+        resize-none	    resize: none;
+        resize-y	      resize: vertical;
+        resize-x	      resize: horizontal;
+        resize	        resize: both;
+
+    -->
+
+    <div class="container">
+      <p>resize</p>
+      <textarea class="resize rounded-md"></textarea><br />
+
+      <p>resize-y</p>
+      <textarea class="resize-y rounded-md"></textarea><br />
+
+      <p>resize-x</p>
+      <textarea class="resize-x rounded-md"></textarea><br />
+
+      <p>resize-none</p>
+      <textarea class="resize-none rounded-md"></textarea><br />
+    </div>
+  </body>
+</html>

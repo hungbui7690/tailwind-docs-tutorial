@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      // (***) hiện tại, dùng CDN nên để vào đây, sau này sử dụng Tailwind CLI sẽ có file tailwind.config.js (lên production sẽ phải dùng tailwind CLI hoặc PostCSS) >> làm y chang, chỉ khác location
+      // since we use CDN -> we set config here
       tailwind.config = {
         theme: {
           screens: {
-            sm: '650px', // đổi từ 640px thành 650px
+            sm: '650px', // change from 640px to 650px
             md: '800px',
             lg: '1200px',
             xl: '1440px',
@@ -20,13 +20,13 @@
             serif: ['Merriweather', 'serif'],
           },
           extend: {
-            // (1) sau khi setup xong có thể sử dụng ở bất cứ đâu (text, bg...)
+            // 1.
             colors: {
               primary: '#ff5733',
               secondary: '#fffc33',
             },
             spacing: {
-              6: '2.5rem', // 6 bình thường là 1.5rem
+              6: '2.5rem', // 6 as normal is 1.5rem
               128: '32rem',
             },
             borderRadius: {
@@ -41,7 +41,7 @@
   <body
     class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
   >
-    <!-- (2) -->
+    <!-- 2. -->
     <div
       class="border-secondary border p-6 mb-128 max-w-sm mx-auto rounded-4xl"
     >

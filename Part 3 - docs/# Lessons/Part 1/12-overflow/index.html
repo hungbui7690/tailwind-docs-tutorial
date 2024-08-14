@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Overflow
+    - Utilities for controlling how an element handles content that is too large for the container.
+
+        overflow-auto	        overflow: auto;
+        overflow-hidden	      overflow: hidden;
+        overflow-clip	        overflow: clip;
+        overflow-visible	    overflow: visible;
+        overflow-scroll	      overflow: scroll;
+        overflow-x-auto	      overflow-x: auto;
+        overflow-y-auto	      overflow-y: auto;
+        overflow-x-hidden	    overflow-x: hidden;
+        overflow-y-hidden	    overflow-y: hidden;
+        overflow-x-clip	      overflow-x: clip;
+        overflow-y-clip	      overflow-y: clip;
+        overflow-x-visible	  overflow-x: visible;
+        overflow-y-visible	  overflow-y: visible;
+        overflow-x-scroll	    overflow-x: scroll;
+        overflow-y-scroll	    overflow-y: scroll;
+
+    -->
+    <div class="container bg-red-400">
+      <div class="overflow-hidden w-full h-96">
+        <img src="./images/2.jpg" class="w-full" />
+      </div>
+      <br /><br />
+
+      <!-- <div class="overflow-visible w-full h-96">
+        <img src="./images/2.jpg" class="w-full" />
+      </div> -->
+
+      <div class="overflow-auto w-full h-96">
+        <img src="./images/2.jpg" class="w-full" />
+      </div>
+    </div>
+  </body>
+</html>

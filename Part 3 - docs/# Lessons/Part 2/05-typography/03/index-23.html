@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Hyphens
+    - Utilities for controlling how words should be hyphenated.
+
+        hyphens-none	hyphens: none;
+        hyphens-manual	hyphens: manual;
+        hyphens-auto	hyphens: auto;
+
+    -->
+
+    <div class="container">
+      <!-- Use hyphens-none to prevent words from being hyphenated even if the line break suggestion &shy; is used: -->
+      <p class="hyphens-none">Kraftfahrzeug&shy;haftpflichtversicherung is a</p>
+
+      <!-- Use hyphens-manual to only set hyphenation points where the line break suggestion &shy; is used: -->
+      <p class="hyphens-manual">
+        Kraftfahrzeug&shy;haftpflichtversicherung is a
+      </p>
+
+      <!-- Use hyphens-auto to allow the browser to automatically choose hyphenation points based on the language. The line break suggestion &shy; will be preferred over automatic hyphenation points. -->
+      <p class="hyphens-auto" lang="de">
+        Kraftfahrzeughaftpflichtversicherung is a
+      </p>
+    </div>
+  </body>
+</html>

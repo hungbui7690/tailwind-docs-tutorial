@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Rotate
+    - Utilities for rotating elements with transform.
+
+        rotate-0	    transform: rotate(0deg);
+        rotate-1	    transform: rotate(1deg);
+        rotate-2	    transform: rotate(2deg);
+        rotate-3	    transform: rotate(3deg);
+        rotate-6	    transform: rotate(6deg);
+        rotate-12	    transform: rotate(12deg);
+        rotate-45	    transform: rotate(45deg);
+        rotate-90	    transform: rotate(90deg);
+        rotate-180	  transform: rotate(180deg);
+    
+    -->
+
+    <div class="container">
+      <img class="bg-cover" src="./images/1.jpg" />
+      <img class="rotate-0 bg-cover" src="./images/1.jpg" />
+      <img class="rotate-45 bg-cover" src="./images/1.jpg" />
+      <img class="rotate-180 bg-cover" src="./images/1.jpg" />
+
+      <!-- negative -->
+      <img class="-rotate-45 bg-cover" src="./images/1.jpg" />
+    </div>
+  </body>
+</html>

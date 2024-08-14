@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Divide Width
+    - Utilities for controlling the border width between elements.
+
+    -->
+
+    <div class="container">
+      <div class="grid grid-cols-3 divide-x divide-blue-500">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+      <br /><br />
+
+      <div class="grid grid-cols-1 divide-y divide-dashed">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+      <br /><br />
+
+      <p>divide-double</p>
+      <div class="grid grid-cols-1 divide-y divide-double">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+      <br /><br />
+
+      <!-- If your elements are in reverse order (using say flex-row-reverse or flex-col-reverse), use the divide-x-reverse or divide-y-reverse utilities to ensure the border is added to the correct side of each element. -->
+      <div
+        class="flex flex-col-reverse divide-y divide-y-reverse divide-blue-900/25"
+      >
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Justify Self
+    - Utilities for controlling how an individual grid item is aligned along its inline axis.
+
+        justify-self-auto	    justify-self: auto;
+        justify-self-start	  justify-self: start;
+        justify-self-end	    justify-self: end;
+        justify-self-center	  justify-self: center;
+        justify-self-stretch	justify-self: stretch;
+
+    -->
+
+    <div class="container bg-slate-200">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="justify-self-start bg-red-500 rounded-lg">01</div>
+        <div class="justify-self-end bg-emerald-400 rounded-lg">02</div>
+        <div class="justify-self-center bg-sky-400 rounded-lg">03</div>
+        <div class="justify-self-auto bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+        <div class="bg-slate-500 rounded-lg">06</div>
+        <div class="bg-violet-400 rounded-lg">07</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Flex Wrap
+    - Utilities for controlling how flex items wrap.
+
+        flex-wrap	          flex-wrap: wrap;
+        flex-wrap-reverse	  flex-wrap: wrap-reverse;
+        flex-nowrap	        flex-wrap: nowrap;
+
+    -->
+
+    <div class="container">
+      <div class="flex flex-nowrap">
+        <div class="basis-1/4 bg-rose-500">01</div>
+        <div class="basis-1/4 bg-emerald-400">02</div>
+        <div class="basis-1/2 bg-sky-500">03</div>
+        <div class="basis-1/2 bg-red-500">04</div>
+        <div class="basis-1/2 bg-orange-500">05</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="basis-1/4 bg-rose-500">01</div>
+        <div class="basis-1/4 bg-emerald-400">02</div>
+        <div class="basis-1/2 bg-sky-500">03</div>
+        <div class="basis-1/2 bg-red-500">04</div>
+        <div class="basis-1/2 bg-orange-500">05</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex flex-wrap-reverse">
+        <div class="basis-1/4 bg-rose-500">01</div>
+        <div class="basis-1/4 bg-emerald-400">02</div>
+        <div class="basis-1/2 bg-sky-500">03</div>
+        <div class="basis-1/2 bg-red-500">04</div>
+        <div class="basis-1/2 bg-orange-500">05</div>
+      </div>
+    </div>
+  </body>
+</html>

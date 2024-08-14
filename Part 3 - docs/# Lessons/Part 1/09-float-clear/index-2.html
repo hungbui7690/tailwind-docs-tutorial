@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Clear
+    - Utilities for controlling the wrapping of content around an element.
+
+        clear-start	    clear: inline-start;
+        clear-end	      clear: inline-end;
+        clear-left	    clear: left;
+        clear-right	    clear: right;
+        clear-both	    clear: both;
+        clear-none	    clear: none;
+
+
+    -->
+
+    <div class="container">
+      <img class="float-left w-48 h-48" src="./images/2.jpg" />
+      <img class="float-right w-48 h-48" src="./images/1.jpg" />
+      <p>Maybe we can live without libraries, people like you and me. ...</p>
+      <p class="clear-left ...">Maybe we can live without libraries...</p>
+    </div>
+
+    <div class="container">
+      <img class="float-right w-48 h-48" src="./images/1.jpg" />
+      <img class="float-left w-48 h-48" src="./images/2.jpg" />
+      <p class="clear-right">Maybe we can live without libraries...</p>
+    </div>
+
+    <div class="container">
+      <img class="float-right w-48 h-48" src="./images/1.jpg" />
+      <img class="float-left w-48 h-48" src="./images/2.jpg" />
+      <p class="clear-both">Maybe we can live without libraries...</p>
+    </div>
+
+    <article class="container" dir="rtl">
+      <img class="float-start w-48 h-48" src="./images/1.jpg" />
+      <img class="float-end w-48 h-48" src="./images/2.jpg" />
+      <p class="clear-end">ربما يمكننا العيش بدون مكتبات،</p>
+    </article>
+  </body>
+</html>

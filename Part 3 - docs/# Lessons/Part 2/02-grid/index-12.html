@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Place Content
+    - Utilities for controlling how content is justified and aligned at the same time.
+
+        place-content-center	    place-content: center;
+        place-content-start	      place-content: start;
+        place-content-end	        place-content: end;
+        place-content-between	    place-content: space-between;
+        place-content-around	    place-content: space-around;
+        place-content-evenly	    place-content: space-evenly;
+        place-content-baseline	  place-content: baseline;
+        place-content-stretch	    place-content: stretch;
+
+    -->
+
+    <p>items-stretch</p>
+    <div class="container bg-slate-200">
+      <div
+        class="grid grid-cols-2 gap-4 place-content-center h-60 bg-yellow-50"
+      >
+        <div class="bg-red-500 rounded-lg h-12 w-12">01</div>
+        <div class="bg-emerald-400 rounded-lg h-12 w-12">02</div>
+        <div class="bg-sky-400 rounded-lg h-12 w-12">03</div>
+        <div class="bg-yellow-500 rounded-lg h-12 w-12">04</div>
+        <div class="bg-orange-300 rounded-lg h-12 w-12">05</div>
+        <div class="bg-violet-300 rounded-lg h-12 w-12">06</div>
+      </div>
+      <br /><br />
+
+      <div class="grid grid-cols-2 gap-4 place-content-start h-60 bg-yellow-50">
+        <div class="bg-red-500 rounded-lg h-12 w-12">01</div>
+        <div class="bg-emerald-400 rounded-lg h-12 w-12">02</div>
+        <div class="bg-sky-400 rounded-lg h-12 w-12">03</div>
+        <div class="bg-yellow-500 rounded-lg h-12 w-12">04</div>
+        <div class="bg-orange-300 rounded-lg h-12 w-12">05</div>
+        <div class="bg-violet-300 rounded-lg h-12 w-12">06</div>
+      </div>
+      <br /><br />
+
+      <div class="grid grid-cols-2 gap-4 place-content-end h-60 bg-yellow-50">
+        <div class="bg-red-500 rounded-lg h-12 w-12">01</div>
+        <div class="bg-emerald-400 rounded-lg h-12 w-12">02</div>
+        <div class="bg-sky-400 rounded-lg h-12 w-12">03</div>
+        <div class="bg-yellow-500 rounded-lg h-12 w-12">04</div>
+        <div class="bg-orange-300 rounded-lg h-12 w-12">05</div>
+        <div class="bg-violet-300 rounded-lg h-12 w-12">06</div>
+      </div>
+      <br /><br />
+
+      <div
+        class="grid grid-cols-2 gap-4 place-content-between h-60 bg-yellow-50"
+      >
+        <div class="bg-red-500 rounded-lg h-12 w-12">01</div>
+        <div class="bg-emerald-400 rounded-lg h-12 w-12">02</div>
+        <div class="bg-sky-400 rounded-lg h-12 w-12">03</div>
+        <div class="bg-yellow-500 rounded-lg h-12 w-12">04</div>
+        <div class="bg-orange-300 rounded-lg h-12 w-12">05</div>
+        <div class="bg-violet-300 rounded-lg h-12 w-12">06</div>
+      </div>
+      <br /><br />
+
+      <div
+        class="grid grid-cols-2 gap-4 place-content-around h-60 bg-yellow-50"
+      >
+        <div class="bg-red-500 rounded-lg h-12 w-12">01</div>
+        <div class="bg-emerald-400 rounded-lg h-12 w-12">02</div>
+        <div class="bg-sky-400 rounded-lg h-12 w-12">03</div>
+        <div class="bg-yellow-500 rounded-lg h-12 w-12">04</div>
+        <div class="bg-orange-300 rounded-lg h-12 w-12">05</div>
+        <div class="bg-violet-300 rounded-lg h-12 w-12">06</div>
+      </div>
+      <br /><br />
+
+      <div
+        class="grid grid-cols-2 gap-4 place-content-evenly h-60 bg-yellow-50"
+      >
+        <div class="bg-red-500 rounded-lg h-12 w-12">01</div>
+        <div class="bg-emerald-400 rounded-lg h-12 w-12">02</div>
+        <div class="bg-sky-400 rounded-lg h-12 w-12">03</div>
+        <div class="bg-yellow-500 rounded-lg h-12 w-12">04</div>
+        <div class="bg-orange-300 rounded-lg h-12 w-12">05</div>
+        <div class="bg-violet-300 rounded-lg h-12 w-12">06</div>
+      </div>
+      <br /><br />
+
+      <div
+        class="grid grid-cols-2 gap-4 place-content-stretch h-60 bg-yellow-50"
+      >
+        <div class="bg-red-500 rounded-lg">01</div>
+        <div class="bg-emerald-400 rounded-lg">02</div>
+        <div class="bg-sky-400 rounded-lg">03</div>
+        <div class="bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+        <div class="bg-violet-300 rounded-lg">06</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

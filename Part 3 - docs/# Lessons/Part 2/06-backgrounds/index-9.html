@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Gradient Color Stops
+    - Utilities for controlling the color stops in background gradients.
+
+        from-inherit
+        from-current
+        from-transparent
+        from-black
+        from-white
+        from-slate-50
+        ....
+        from-0%
+        from-5%
+        ....
+        from-95%
+        from-100%
+        .... 
+        via-inherit
+        via-current
+        via-transparent
+        via-black
+        via-white
+        via-slate-50
+        ....
+        via-100%
+        to-inherit
+        to-current
+        to-transparent
+        to-black
+        to-white
+        to-slate-50
+        ....
+        to-100%
+
+    -->
+
+    <!-- Use the from-* utilities to set the starting color of a gradient. -->
+    <div class="bg-gradient-to-r from-indigo-500 h-12"></div>
+    <br />
+
+    <!-- Use the to-* utilities to set the ending color of a gradient. -->
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-12"></div>
+    <br />
+
+    <!-- Use the via-* utilities to add a middle color to a gradient. -->
+    <div
+      class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-12"
+    ></div>
+    <br />
+
+    <!-- For more control over the gradient color stop positions, combine the gradient color utilities with gradient position utilities like from-10%, via-30% and to-90%. -->
+    <div
+      class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-12"
+    ></div>
+    <br />
+
+    <button
+      type="button"
+      class="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 p-2 rounded-md"
+    >
+      Hover me
+    </button>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Background Attachment
+    - Utilities for controlling how a background image behaves when scrolling.
+
+        bg-fixed	  background-attachment: fixed;
+        bg-local	  background-attachment: local;
+        bg-scroll	  background-attachment: scroll;
+
+    -->
+
+    <!-- Use bg-fixed to fix the background image relative to the viewport. -->
+    <div
+      class="bg-fixed w-screen h-screen bg-cover"
+      style="background-image: url('./images/1.jpg')"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam,
+      deserunt quisquam veritatis sequi iure dicta pariatur maxime corporis,
+      provident eaque saepe qui nam minima expedita at ut nostrum autem.
+    </div>
+
+    <!-- Use bg-local to scroll the background image with the container and the viewport. -> comment this to understand -->
+    <div
+      class="bg-scroll w-screen h-screen bg-cover"
+      style="background-image: url('./images/2.jpg')"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
+      laboriosam quod quo dolores nam necessitatibus voluptas aspernatur
+      accusantium corporis fuga, animi tenetur quaerat hic eum delectus odit
+      earum unde. Ab.
+    </div>
+  </body>
+</html>

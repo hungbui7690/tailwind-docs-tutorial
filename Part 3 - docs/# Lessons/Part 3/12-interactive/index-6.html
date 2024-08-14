@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    User Select
+    - Utilities for controlling whether the user can select text in an element.
+
+        select-none	    user-select: none;
+        select-text	    user-select: text;
+        select-all	    user-select: all;
+        select-auto	    user-select: auto;
+
+    -->
+
+    <div class="container">
+      <div class="select-none">
+        The quick brown fox jumps over the lazy dog.
+      </div>
+      <div class="select-text">
+        The quick brown fox jumps over the lazy dog.
+      </div>
+      <div class="select-all">The quick brown fox jumps over the lazy dog.</div>
+      <div class="select-auto">
+        The quick brown fox jumps over the lazy dog.
+      </div>
+    </div>
+  </body>
+</html>

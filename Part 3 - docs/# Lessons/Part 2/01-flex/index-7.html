@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Order
+    - Utilities for controlling the order of flex and grid items.
+
+    - order-1 -> order-12
+    - order-first -> order: -9999;
+    - order-last  -> order: 9999;
+    - order-none  -> order: 0;
+
+    -->
+
+    <!-- Use shrink to allow a flex item to shrink if needed: -->
+    <div class="container">
+      <div class="flex justify-between">
+        <div class="order-last bg-rose-500">01</div>
+        <div class="bg-emerald-400">02</div>
+        <div class="bg-sky-500">03</div>
+      </div>
+    </div>
+
+    <!-- To use a negative order value, prefix the class name with a dash to convert it to a negative value. -->
+    <div class="container">
+      <div class="flex justify-between">
+        <div class="-order-1 bg-rose-500">01</div>
+        <div class="bg-emerald-400">02</div>
+        <div class="bg-sky-500">03</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <title>Dark Mode</title>
+  </head>
+  <body>
+    <!-- 
+      DarkMode
+      1. Need to use cdn
+      2. add script tag above and below
+    -->
+
+    <div
+      class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl"
+    >
+      <h3 class="text-slate-900 dark:text-white font-medium tracking-tight">
+        Lorem ipsum dolor sit.
+      </h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        placeat earum a exercitationem? Minima corrupti ad magni aut suscipit
+        nulla voluptatem atque vitae fugit at.
+      </p>
+    </div>
+
+    <div
+      class="relative inline-block w-10 mr-2 ml-6 mt-6 align-middle select-none transition duration-200 ease-in bg"
+    >
+      <input
+        type="checkbox"
+        name="toggle"
+        id="toggle"
+        class="cursor-pointer accent-pink-500 bg-pink-500"
+      />
+    </div>
+
+    <script>
+      document.getElementById('toggle').addEventListener('change', function () {
+        if (this.checked) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+      })
+    </script>
+  </body>
+</html>
+
+<!-- Credit for toggle button style
+https://tailwindcomponents.com/component/toggle-switch
+-->

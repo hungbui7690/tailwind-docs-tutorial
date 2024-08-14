@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Justify Items
+    - Utilities for controlling how grid items are aligned along their inline axis.
+
+        justify-items-start	  justify-items: start;
+        justify-items-end	    justify-items: end;
+        justify-items-center	justify-items: center;
+        justify-items-stretch	justify-items: stretch;
+
+    -->
+
+    <div class="container bg-slate-200">
+      <div class="grid grid-cols-3 gap-4 justify-items-start">
+        <div class="bg-red-500 w-12 h-12 rounded-lg">01</div>
+        <div class="bg-emerald-400 w-12 h-12 rounded-lg">02</div>
+        <div class="bg-sky-400 w-12 h-12 rounded-lg">03</div>
+        <div class="bg-yellow-500 w-12 h-12 rounded-lg">04</div>
+        <div class="bg-orange-300 w-12 h-12 rounded-lg">05</div>
+        <div class="bg-slate-500 w-12 h-12 rounded-lg">06</div>
+        <div class="bg-violet-400 w-12 h-12 rounded-lg">07</div>
+      </div>
+      <br /><br />
+
+      <p>justify-items-end</p>
+      <div class="grid grid-cols-3 gap-4 justify-items-end">
+        <div class="bg-red-500 w-12 h-12 rounded-lg">01</div>
+        <div class="bg-emerald-400 w-12 h-12 rounded-lg">02</div>
+        <div class="bg-sky-400 w-12 h-12 rounded-lg">03</div>
+        <div class="bg-yellow-500 w-12 h-12 rounded-lg">04</div>
+        <div class="bg-orange-300 w-12 h-12 rounded-lg">05</div>
+        <div class="bg-slate-500 w-12 h-12 rounded-lg">06</div>
+        <div class="bg-violet-400 w-12 h-12 rounded-lg">07</div>
+      </div>
+      <br /><br />
+
+      <p>justify-items-center</p>
+      <div class="grid grid-cols-3 gap-4 justify-items-center">
+        <div class="bg-red-500 w-12 h-12 rounded-lg">01</div>
+        <div class="bg-emerald-400 w-12 h-12 rounded-lg">02</div>
+        <div class="bg-sky-400 w-12 h-12 rounded-lg">03</div>
+        <div class="bg-yellow-500 w-12 h-12 rounded-lg">04</div>
+        <div class="bg-orange-300 w-12 h-12 rounded-lg">05</div>
+        <div class="bg-slate-500 w-12 h-12 rounded-lg">06</div>
+        <div class="bg-violet-400 w-12 h-12 rounded-lg">07</div>
+      </div>
+      <br /><br />
+
+      <p>justify-items-stretch</p>
+      <div class="grid grid-cols-3 gap-4 justify-items-stretch">
+        <div class="bg-red-500 w-12 h-12 rounded-lg">01</div>
+        <div class="bg-emerald-400 w-12 h-12 rounded-lg">02</div>
+        <div class="bg-sky-400 w-12 h-12 rounded-lg">03</div>
+        <div class="bg-yellow-500 w-12 h-12 rounded-lg">04</div>
+        <div class="bg-orange-300 w-12 h-12 rounded-lg">05</div>
+        <div class="bg-slate-500 w-12 h-12 rounded-lg">06</div>
+        <div class="bg-violet-400 w-12 h-12 rounded-lg">07</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

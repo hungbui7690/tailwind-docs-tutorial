@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .content-area {
+    height: calc(100vh - theme(spacing.12));
+  }
+}
+
+/* This shows error, though it's still working */
+/*👉
+@media screen(sm) {
+  .btn {
+    color: red;
+  }
+}
+👈*/
+
+/* Because of the screen() shows error -> we will use this instead */
+@media (min-width: 640px) {
+}

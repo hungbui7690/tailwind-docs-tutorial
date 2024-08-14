@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Dark Mode</title>
+  </head>
+  <body>
+    <!-- 
+      Custom Theme
+      - tailwind.config.js
+      - 2 methods:
+        # add under "theme" property 
+          -> Any keys you do not provide will be inherited from the default theme
+          -> You can also alias the colors in our default palette to make the names simpler and easier to remember
+          -> This will overwrite the default color pallette
+
+              theme: {
+                colors: {
+                  transparent: 'transparent',
+                  current: 'currentColor',
+                  black: colors.black,
+                  white: colors.white,
+                  gray: colors.gray,
+                  emerald: colors.emerald,
+                  indigo: colors.indigo,
+                  yellow: colors.yellow,
+                },
+                fontFamily: {
+                  'sans': ['ui-sans-serif', 'system-ui', ...],
+                  'serif': ['ui-serif', 'Georgia', ...],
+                  'mono': ['ui-monospace', 'SFMono-Regular', ...],
+                  'display': ['Oswald', ...],
+                  'body': ['"Open Sans"', ...],
+                }
+              },
+          =>> class="font-sans"
+          =>> class="font-display"
+          ...
+
+        # under "extends"
+          -> If you’d like to add a brand new color to the default palette, add it in the theme.extend.colors section of your configuration file:
+              theme: {
+                extend: {
+                  colors: {
+                    brown: {
+                      50: '#fdf8f6',
+                      ....
+                      900: '#43302b',
+                    },
+                  }
+                },
+              },
+
+          -> You can also use theme.extend.colors to add additional shades to an existing color if it’s needed for your design:
+              theme: {
+                extend: {
+                  colors: {
+                    blue: {
+                      950: '#17275c',
+                    },
+                  }
+                },
+              },
+
+    -->
+
+    <div class="container bg-tahiti-500">
+      <h1 class="">Hello World</h1>
+    </div>
+  </body>
+</html>

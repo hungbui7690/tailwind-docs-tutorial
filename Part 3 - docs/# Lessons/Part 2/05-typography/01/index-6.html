@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Letter Spacing
+    - Utilities for controlling the tracking (letter spacing) of an element.
+
+        tracking-tighter	  letter-spacing: -0.05em;
+        tracking-tight	    letter-spacing: -0.025em;
+        tracking-normal	    letter-spacing: 0em;
+        tracking-wide	      letter-spacing: 0.025em;
+        tracking-wider	    letter-spacing: 0.05em;
+        tracking-widest	    letter-spacing: 0.1em;
+
+
+*************************
+
+    theme: {
+      letterSpacing: {
+        tightest: '-.075em',
+        tighter: '-.05em',
+        tight: '-.025em',
+        normal: '0',
+        wide: '.025em',
+        wider: '.05em',
+        widest: '.1em',
+        widest: '.25em',
+      }
+    }
+
+
+    -->
+
+    <div class="container">
+      <p class="tracking-tight">The quick brown fox</p>
+      <p class="tracking-normal">The quick brown fox</p>
+      <p class="tracking-wide">The quick brown fox</p>
+
+      <!-- Negative -->
+      <p class="-tracking-wide">The quick brown fox</p>
+
+      <!-- Arbitrary -->
+      <p class="tracking-[.25rem]">The quick brown fox</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Position
+    - Utilities for controlling how an element is positioned in the DOM.
+
+        static	        position: static;
+        fixed	          position: fixed;
+        absolute	      position: absolute;
+        relative	      position: relative;
+        sticky	        position: sticky;
+
+    -->
+    <div class="container">
+      <div class="static bg-gray-300">
+        <p>Static parent</p>
+
+        <!-- relate to body -->
+        <div class="absolute bottom-0 right-0 bg-amber-300-300">
+          <p class="text-3xl">Absolute child in Static Container</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="relative bg-gray-300">
+        <p>Static parent</p>
+        <div class="absolute bottom-0 left-0 bg-emerald-300">
+          <p>Absolute child in Relative Container</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!-- Fixed -->
+    <div class="container relative">
+      <div class="fixed top-0 left-0 right-0 bg-yellow-500">Contacts</div>
+      <div>
+        <div>
+          <img src="images/1.jpg" class="w-12 h-12 rounded-full" />
+          <strong>Andrew Alfred</strong>
+        </div>
+        <div>
+          <img src="images/2.jpg" class="w-12 h-12 rounded-full" />
+          <strong>Debra Houston</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky -->
+    <div>
+      <div>
+        <div class="sticky top-0 bg-red-500">A</div>
+        <div>
+          <div>
+            <img src="images/1.jpg" class="w-12 h-12 rounded-full" />
+            <strong>Andrew Alfred</strong>
+          </div>
+          <div>
+            <img src="images/2.jpg" class="w-12 h-12 rounded-full" />
+            <strong>Aisha Houston</strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sticky top-0 bg-emerald-300">B</div>
+        <div>
+          <div>
+            <img src="images/3.jpg" class="w-12 h-12 rounded-full" />
+            <strong>Bob Alfred</strong>
+          </div>
+          <div>
+            <img src="images/4.jpg" class="w-12 h-12 rounded-full" />
+            <strong>Ben K</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full h-screen"></div>
+    <div class="w-full h-screen"></div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Handling Hover, Focus, and Other States
+    - :hover :focus :first-child :required
+    - ::before ::after ::placeholder ::selection
+    
+
+    -->
+
+    <div class="container">
+      <!-- :hover -->
+      <button
+        class="p-2 rounded-md bg-sky-500 hover:bg-sky-700 hover:text-white"
+      >
+        Save changes
+      </button>
+
+      <!-- :focus -->
+      <button
+        class="p-2 rounded-md bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+      >
+        Save changes
+      </button>
+    </div>
+  </body>
+</html>

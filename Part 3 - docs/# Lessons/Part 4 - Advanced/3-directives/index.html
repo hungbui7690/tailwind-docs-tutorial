@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Dark Mode</title>
+  </head>
+  <body>
+    <!-- 
+    Directives
+    - Directives are custom Tailwind-specific at-rules you can use in your CSS that offer special functionality for Tailwind CSS projects.
+
+    1. input.css
+
+
+***********************************
+
+    @layer
+    - Use the @layer directive to tell Tailwind which “bucket” a set of custom styles belong to. Valid layers are base, components, and utilities.
+
+
+***********************************
+
+    @apply
+    - Use @apply to inline any existing utility classes into your own custom CSS.
+    - This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want to work with your design tokens and use the same syntax you’re used to using in your HTML.
+
+
+************************************
+
+    @config
+    - Use the @config directive to specify which config file Tailwind should use when compiling that CSS file. This is useful for projects that need to use different configuration files for different CSS entry points.
+    - Note that if you’re using postcss-import, your @import statements need to come before @config for things to work correctly, as postcss-import is strict about following the CSS spec which requires @import statements to precede any other rules in the file.
+
+      @import "tailwindcss/base";
+      @import "./custom-base.css";
+      @import "tailwindcss/components";
+      @import "./custom-components.css";
+      @import "tailwindcss/utilities";
+
+      @config "./tailwind.admin.config.js";
+
+    -->
+
+    <div class="container bg-tahiti-500">
+      <h1 class="">Hello World</h1>
+    </div>
+  </body>
+</html>

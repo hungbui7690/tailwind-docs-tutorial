@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Transition Timing Function
+    - Utilities for controlling the easing of CSS transitions.
+
+        ease-linear	    transition-timing-function: linear;
+        ease-in	        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        ease-out	      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        ease-in-out	    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    -->
+
+    <div class="container">
+      <button class="transition duration-700 ease-in hover:bg-pink-400">
+        Button A
+      </button>
+      <button class="transition duration-700 ease-out hover:bg-pink-400">
+        Button B
+      </button>
+      <button class="transition duration-700 ease-in-out hover:bg-pink-400">
+        Button C
+      </button>
+    </div>
+  </body>
+</html>

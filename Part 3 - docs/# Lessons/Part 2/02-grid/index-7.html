@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Grid Auto Rows
+    - Utilities for controlling the size of implicitly-created grid rows.
+
+        auto-rows-auto	  grid-auto-rows: auto;
+        auto-rows-min	    grid-auto-rows: min-content;
+        auto-rows-max	    grid-auto-rows: max-content;
+        auto-rows-fr	    grid-auto-rows: minmax(0, 1fr);
+
+
+***************************
+
+    Example 1:
+      display: grid;
+      grid-template-areas: "media detail detail"
+                            "media detail detail";
+      grid-template-rows: 200px;
+      grid-auto-rows: 150px;
+      -> 1st row: 200px 
+      -> 2nd row: 150px
+
+
+***************************
+
+    Example 2: 
+      grid-template-rows: repeat(2, 100px);
+      grid-auto-rows: 150px;
+      -> 2 explicit rows has size = 150px
+      -> Now, no matter how many implicit rows get created, they will all have their size set to 150px.
+
+
+***************************
+
+    Example 3:
+      grid-template-rows: 50px 50px;
+      grid-auto-rows: 40px 60px 80px;
+      -> 1st: 50px
+      -> 2nd: 50px
+      -> 3rd: 40px
+      -> 4th: 60px
+      -> 5th: 80px
+      -> 6rd: 40px
+      -> 7th: 60px
+      -> 8th: 80px
+      ....
+
+    -->
+
+    <!-- Use the auto-rows-* utilities to control the size of implicitly-created grid rows. -->
+    <div class="grid grid-flow-row auto-rows-max">
+      <div class="bg-red-500">Box 01</div>
+      <div class="bg-emerald-500">Box 02</div>
+      <div class="bg-sky-500">Box 03</div>
+    </div>
+    <br /><br />
+
+    <div class="grid grid-flow-row auto-rows-min">
+      <div class="bg-red-500">Box 01</div>
+      <div class="bg-emerald-500">Box 02</div>
+      <div class="bg-sky-500">Box 03</div>
+    </div>
+    <br /><br />
+
+    <div class="grid grid-flow-row auto-rows-fr">
+      <div class="bg-red-500">Box 01</div>
+      <div class="bg-emerald-500">Box 02</div>
+      <div class="bg-sky-500">Box 03</div>
+    </div>
+
+    <!-- Can set config or can use Arbitrary Values -->
+    <div class="grid grid-flow-row auto-rows-[minmax(0,_2fr)]">
+      <div class="bg-red-500">Box 01</div>
+      <div class="bg-emerald-500">Box 02</div>
+      <div class="bg-sky-500">Box 03</div>
+    </div>
+
+    <br /><br />
+  </body>
+</html>

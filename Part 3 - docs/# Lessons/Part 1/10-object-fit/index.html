@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Object Fit
+    - Utilities for controlling how a replaced element's content should be resized.
+
+        object-contain	    object-fit: contain;
+        object-cover	      object-fit: cover;
+        object-fill	        object-fit: fill;
+        object-none	        object-fit: none;
+        object-scale-down	  object-fit: scale-down;
+
+    -->
+    <div class="bg-emerald-300">
+      <img class="object-cover h-48 w-96" src="./images/1.jpg" />
+    </div>
+    <div class="bg-orange-300">
+      <img class="object-contain h-48 w-96" src="./images/1.jpg" />
+    </div>
+    <div class="bg-rose-300">
+      <img class="object-fill h-48 w-96" src="./images/1.jpg" />
+    </div>
+    <div class="bg-sky-300">
+      <img class="object-scale-down h-48 w-96" src="./images/1.jpg" />
+    </div>
+    <div class="bg-violet-400">
+      <img class="object-none h-48 w-96" src="./images/1.jpg" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Align Items
+    - Utilities for controlling how flex and grid items are positioned along a container's cross axis.
+
+        items-start	    align-items: flex-start;
+        items-end	      align-items: flex-end;
+        items-center	  align-items: center;
+        items-baseline	align-items: baseline;
+        items-stretch	  align-items: stretch;
+
+    -->
+
+    <p>items-stretch</p>
+    <div class="container bg-slate-200">
+      <div class="items-stretch flex h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg">01</div>
+        <div class="bg-emerald-400 rounded-lg">02</div>
+        <div class="bg-sky-400 rounded-lg">03</div>
+        <div class="bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+      </div>
+      <br /><br />
+
+      <p>items-start</p>
+      <div class="items-start flex h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg">01</div>
+        <div class="bg-emerald-400 rounded-lg">02</div>
+        <div class="bg-sky-400 rounded-lg">03</div>
+        <div class="bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+      </div>
+      <br /><br />
+
+      <p>items-end</p>
+      <div class="items-end flex h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg">01</div>
+        <div class="bg-emerald-400 rounded-lg">02</div>
+        <div class="bg-sky-400 rounded-lg">03</div>
+        <div class="bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+      </div>
+      <br /><br />
+
+      <p>items-center</p>
+      <div class="items-center flex h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg">01</div>
+        <div class="bg-emerald-400 rounded-lg">02</div>
+        <div class="bg-sky-400 rounded-lg">03</div>
+        <div class="bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+      </div>
+      <br /><br />
+
+      <p>items-baseline</p>
+      <div class="items-baseline flex h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="bg-red-500 rounded-lg">01</div>
+        <div class="bg-emerald-400 rounded-lg">02</div>
+        <div class="bg-sky-400 rounded-lg">03</div>
+        <div class="bg-yellow-500 rounded-lg">04</div>
+        <div class="bg-orange-300 rounded-lg">05</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

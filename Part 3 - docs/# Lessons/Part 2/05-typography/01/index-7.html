@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Line Clamp
+    - Utilities for clamping text to a specific number of lines.
+
+        line-clamp-1	overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;
+        ....
+        line-clamp-6
+        line-clamp-6	overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6;
+        line-clamp-[7]
+
+
+*************************
+
+      theme: {
+        extend: {
+          lineClamp: {
+            7: '7',
+          },
+        }
+      }
+
+    -->
+
+    <!-- We want <p> shows only 3 lines  -->
+    <div class="container">
+      <article>
+        <time class="italic">Mar 10, 2020</time>
+        <h2 class="font-bold">Boost your conversion rate</h2>
+        <p class="line-clamp-3">
+          Nulla dolor velit adipisicing duis excepteur esse in duis nostrud
+          occaecat mollit incididunt deserunt sunt. Ut ut sunt laborum ex
+          occaecat eu tempor labore enim adipisicing minim ad. Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Unde, obcaecati? Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima
+          voluptatem, quaerat fuga porro delectus doloribus, ullam laudantium
+          sunt animi vel unde quae ea fugit odit repellendus maxime ratione
+          quas!
+        </p>
+        <div class="flex gap-4 items-center">
+          <img src="./images/1.jpg" class="w-12 h-12 rounded-full" />
+          Lindsay Walton
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

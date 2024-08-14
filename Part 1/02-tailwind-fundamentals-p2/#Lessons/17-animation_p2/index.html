@@ -10,7 +10,7 @@
         theme: {
           extend: {
             animation: {
-              'spin-slow': 'spin 3s linear infinite', // (1)
+              'spin-slow': 'spin 3s linear infinite', // 1.
             },
           },
         },
@@ -19,7 +19,7 @@
     <title>Animation</title>
   </head>
   <body>
-    <!-- (2) -->
+    <!-- 2. -->
     <div class="flex items-center justify-center min-h-screen bg-slate-900">
       <svg
         class="animate-spin-slow w-48 text-white"
@@ -49,49 +49,47 @@
 animate-none	animation: none;
 
 animate-spin	animation: spin 1s linear infinite;
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 animate-ping	animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
+  @keyframes ping {
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
   }
-}
 
 
 animate-pulse	animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
   }
-  50% {
-    opacity: .5;
-  }
-}
 
 
 animate-bounce	animation: bounce 1s infinite;
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
+
 -->

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Grid Template Rows
+    - Utilities for specifying the rows in a grid layout.
+
+        grid-rows-1	        grid-template-rows: repeat(1, minmax(0, 1fr));
+        ....
+        grid-rows-12	      grid-template-rows: repeat(12, minmax(0, 1fr));
+        grid-rows-none	    grid-template-rows: none;
+        grid-rows-subgrid	  grid-template-rows: subgrid;
+
+    -->
+
+    <!-- Use the grid-rows-* utilities to create grids with n equally sized rows. -->
+    <div class="container">
+      <div class="grid grid-rows-4 grid-flow-col gap-4">
+        <div class="bg-rose-500">01</div>
+        <div class="bg-emerald-400">02</div>
+        <div class="bg-sky-500">03</div>
+        <div class="bg-orange-500">04</div>
+        <div class="bg-slate-400">05</div>
+        <div class="bg-amber-300">06</div>
+        <div class="bg-cyan-400">07</div>
+        <div class="bg-green-300">08</div>
+      </div>
+    </div>
+
+    <!-- Use the grid-rows-subgrid utility to adopt the row tracks defined by the item’s parent. -->
+    <div class="container">
+      <div class="grid grid-rows-4 grid-flow-col gap-4">
+        <div class="bg-rose-500">01</div>
+        <div class="bg-emerald-400">02</div>
+        <div class="bg-sky-500">03</div>
+        <div class="bg-orange-500">04</div>
+        <div class="bg-slate-400">05</div>
+        <div class="grid grid-rows-subgrid gap-4 row-span-3">
+          <div class="row-start-2 bg-amber-300">06</div>
+        </div>
+        <div class="bg-cyan-400">07</div>
+        <div class="bg-green-300">08</div>
+        <div class="bg-yellow-300">09</div>
+        <div class="bg-orange-300">10</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Space Between
+    - Utilities for controlling the space "between child elements".
+
+        space-x-0     	      margin-left: 0px;
+        space-y-0     	      margin-top: 0px;
+        space-x-0.5           margin-left: 0.125rem; /* 2px */
+        space-y-0.5           -top: 0.125rem; /* 2px */
+        space-x-96    	      margin-left: 24rem; /* 384px */
+        space-y-96    	      margin-top: 24rem; /* 384px */
+        space-x-px    	      margin-left: 1px;
+        space-y-px    	      margin-top: 1px;
+        space-y-reverse     	--tw-space-y-reverse: 1;
+        space-x-reverse     	--tw-space-x-reverse: 1;
+
+    -->
+
+    <div class="container flex space-x-4">
+      <div class="bg-red-500 rounded-lg w-16 h-16">01</div>
+      <div class="bg-emerald-400 rounded-lg w-16 h-16">02</div>
+      <div class="bg-sky-400 rounded-lg w-16 h-16">03</div>
+      <div class="bg-yellow-500 rounded-lg w-16 h-16">04</div>
+      <div class="bg-orange-300 rounded-lg w-16 h-16">05</div>
+      <div class="bg-violet-300 rounded-lg w-16 h-16">06</div>
+      <div class="bg-red-500 rounded-lg w-16 h-16">07</div>
+    </div>
+    <br /><br />
+
+    <div class="space-y-4 flex flex-col container">
+      <div class="bg-red-500 rounded-lg w-32 h-32">01</div>
+      <div class="bg-emerald-400 rounded-lg w-32 h-32">02</div>
+      <div class="bg-sky-400 rounded-lg w-32 h-32">03</div>
+      <div class="bg-yellow-500 rounded-lg w-32 h-32">04</div>
+      <div class="bg-orange-300 rounded-lg w-32 h-32">05</div>
+      <div class="bg-violet-300 rounded-lg w-32 h-32">06</div>
+      <div class="bg-red-500 rounded-lg w-32 h-32">07</div>
+    </div>
+    <br /><br />
+
+    <div class="space-x-4 space-x-reverse flex flex-row-reverse container">
+      <div class="bg-red-500 rounded-lg w-32 h-32">01</div>
+      <div class="bg-emerald-400 rounded-lg w-32 h-32">02</div>
+      <div class="bg-sky-400 rounded-lg w-32 h-32">03</div>
+      <div class="bg-yellow-500 rounded-lg w-32 h-32">04</div>
+      <div class="bg-orange-300 rounded-lg w-32 h-32">05</div>
+      <div class="bg-violet-300 rounded-lg w-32 h-32">06</div>
+      <div class="bg-red-500 rounded-lg w-32 h-32">07</div>
+    </div>
+    <br /><br />
+
+    <div class="-space-x-8 flex container">
+      <div class="bg-red-500 rounded-lg w-32 h-32">01</div>
+      <div class="bg-emerald-400 rounded-lg w-32 h-32">02</div>
+      <div class="bg-sky-400 rounded-lg w-32 h-32">03</div>
+      <div class="bg-yellow-500 rounded-lg w-32 h-32">04</div>
+    </div>
+    <br /><br />
+  </body>
+</html>

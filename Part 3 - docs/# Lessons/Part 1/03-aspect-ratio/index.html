@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+  </head>
+  <body>
+    <!-- 
+    Aspect Ratio
+
+      aspect-auto	      aspect-ratio: auto;
+      aspect-square	    aspect-ratio: 1 / 1;
+      aspect-video	    aspect-ratio: 16 / 9;
+      aspect-*
+
+    -->
+    <div class="container">
+      <video class="w-full aspect-video" controls>
+        <source src="./images/video.mp4" type="video/mp4" />
+      </video>
+      <img class="w-full aspect-auto" src="./images/1.jpg" />
+      <img class="w-full aspect-square" src="./images/2.jpg" />
+      <img class="w-full aspect-square" src="./images/3.jpg" />
+      <img class="w-full aspect-*" src="./images/4.jpg" />
+      <img class="w-full aspect-[4/3]" src="./images/5.jpg" />
+    </div>
+  </body>
+</html>

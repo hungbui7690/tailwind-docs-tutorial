@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Floats
+    - Utilities for controlling the wrapping of content around an element.
+
+        float-start	      float: inline-start;
+        float-end	        float: inline-end;
+        float-right	      float: right;
+        float-left	      float: left;
+        float-none	      float: none;
+
+    -->
+    <div class="container">
+      <img class="float-right w-48 h-48" src="./images/1.jpg" />
+      <p>Maybe we can live without libraries, people like you and me. ...</p>
+    </div>
+
+    <div class="container">
+      <img class="float-left w-48 h-48" src="./images/2.jpg" />
+      <p>Maybe we can live without libraries, people like you and me. ...</p>
+    </div>
+
+    <div class="container">
+      <img class="float-none w-48 h-48" src="./images/3.jpg" />
+      <p>Maybe we can live without libraries, people like you and me. ...</p>
+    </div>
+
+    <!-- Use the float-start or float-end utilities, which use logical properties to map to either the left or right side based on the text direction.  -->
+    <div class="container">
+      <img class="float-start w-48 h-48" src="./images/3.jpg" />
+      <p dir="rtl">
+        ربما يمكننا العيش بدون مكتبات، أشخاص مثلي ومثلك. ربما. بالتأكيد
+      </p>
+    </div>
+  </body>
+</html>

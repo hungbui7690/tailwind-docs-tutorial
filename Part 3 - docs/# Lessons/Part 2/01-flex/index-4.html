@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Flex
+    - Utilities for controlling how flex items both grow and shrink.
+
+        flex-1	      flex: 1 1 0%;
+        flex-auto	    flex: 1 1 auto;
+        flex-initial	flex: 0 1 auto;
+        flex-none	    flex: none;
+
+    -->
+
+    <!-- Method 1 -->
+    <div class="container">
+      <div class="flex">
+        <div class="basis-5/12 bg-rose-500">01</div>
+        <div class="basis-5/12 bg-emerald-400">02</div>
+        <div class="basis-2/12 bg-sky-500">03</div>
+      </div>
+    </div>
+
+    <!-- Method 2 -->
+    <div class="container">
+      <div class="flex">
+        <div class="flex-[5] bg-rose-500">01</div>
+        <div class="flex-[5] bg-emerald-400">02</div>
+        <div class="flex-[2] bg-sky-500">03</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex">
+        <div class="flex-none w-14 bg-rose-500">01</div>
+        <div class="flex-initial w-64 bg-emerald-500">02</div>
+        <div class="flex-initial w-32 bg-orange-500">03</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex">
+        <div class="flex-none w-14 bg-rose-500">01</div>
+        <div class="flex-1 w-64 bg-emerald-500">02</div>
+        <div class="flex-1 w-32 bg-orange-500">03</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex">
+        <div class="flex-none w-14 bg-rose-500">01</div>
+        <div class="flex-none w-64 bg-emerald-500">02</div>
+        <div class="flex-1 w-32 bg-orange-500">03</div>
+      </div>
+    </div>
+  </body>
+</html>

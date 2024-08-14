@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Content
+    - Utilities for controlling the content of the before and after pseudo-elements.
+
+        content-none	  content: none;
+
+    -->
+
+    <!-- Use the square bracket notation to define any arbitrary content value on the fly. -->
+    <div class="container">
+      Higher resolution means more than just a better-quality image. With a
+      Retina 6K display,
+      <a
+        class="text-sky-400 after:content-['_↗']"
+        href="https://www.
+      apple.com/pro-display-xdr/"
+        target="_blank"
+        >Pro Display XDR</a
+      >
+      gives you nearly 40 percent more screen real estate than a 5K display.
+    </div>
+
+    <div class="container">
+      <!-- These content utilities even support CSS features like the attr() function, which you can use to reference a value stored in an attribute: -->
+      <div before="Hello World" class="before:content-[attr(before)]">
+        Hi there!!
+      </div>
+    </div>
+
+    <div class="container bg-yellow-300">
+      <!-- Since whitespace denotes the end of a class in HTML, replace any spaces in an arbitrary value with an underscore: -->
+      <div class="before:content-['Hello_World']">...</div>
+    </div>
+
+    <div class="container bg-green-400">
+      <div class="before:content-['Hello\_World']">...</div>
+    </div>
+  </body>
+</html>

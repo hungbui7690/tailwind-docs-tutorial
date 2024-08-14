@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Accent Color
+    - Utilities for controlling the accented color of a form control.
+
+        accent-inherit	      accent-color: inherit;
+        accent-current	      accent-color: currentColor;
+        accent-transparent	  accent-color: transparent;
+        accent-black	        accent-color: #000;
+        accent-white	        accent-color: #fff;
+        accent-slate-50	      accent-color: #f8fafc;
+        ....
+
+    -->
+
+    <div class="container">
+      <label> <input type="checkbox" checked /> Browser default </label>
+      <label>
+        <input type="checkbox" class="accent-pink-500" checked /> Customized
+      </label>
+      <label
+        ><input type="checkbox" class="accent-emerald-500/25" checked />
+        Emerald</label
+      >
+      <label
+        ><input
+          type="checkbox"
+          class="accent-pink-300 md:accent-pink-500"
+          checked
+        />Pink</label
+      >
+    </div>
+  </body>
+</html>

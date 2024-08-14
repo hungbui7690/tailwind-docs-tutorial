@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+  </head>
+  <body>
+    <!-- 
+    Break After
+    - Utilities for controlling how a column or page should break after an element.
+        break-after-auto	        break-after: auto;
+        break-after-avoid	        break-after: avoid;
+        break-after-all	          break-after: all;
+        break-after-avoid-page	  break-after: avoid-page;
+        break-after-page	        break-after: page;
+        break-after-left	        break-after: left;
+        break-after-right	        break-after: right;
+        break-after-column	      break-after: column;
+
+    - Use the break-after-* utilities to control how a column or page break should behave after an element. For example, use the break-after-column utility to force a column break after an element.
+
+
+  ************************************
+
+    Break Before
+
+  ************************************
+    
+    Break Inside
+
+    -->
+    <div class="columns-2 text-emerald-500">
+      <p>NO BREAK</p>
+      <p>Well, let me tell you something, ...</p>
+      <p>Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+    <br /><br />
+
+    <div class="columns-2 text-orange-500">
+      <p>BREAK AFTER</p>
+      <p>Well, let me tell you something, ...</p>
+      <p class="break-after-column">Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+    <br /><br />
+
+    <div class="columns-2 text-rose-500">
+      <p>BREAK BEFORE</p>
+      <p>Well, let me tell you something, ...</p>
+      <p class="break-before-column">Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+    <br /><br />
+
+    <div class="columns-2 text-violet-500">
+      <p>BREAK INSIDE</p>
+      <p>Well, let me tell you something, ...</p>
+      <p class="break-inside-avoid-column">Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+  </body>
+</html>

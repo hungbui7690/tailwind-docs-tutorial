@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Display
+    - Utilities for controlling the display box type of an element.
+
+        block	                  display: block;
+        inline-block	          display: inline-block;
+        inline	                display: inline;
+        flex	                  display: flex;
+        inline-flex	            display: inline-flex;
+        table	                  display: table;
+        inline-table	          display: inline-table;
+        table-caption	          display: table-caption;
+        table-cell	            display: table-cell;
+        table-column	          display: table-column;
+        table-column-group	    display: table-column-group;
+        table-footer-group	    display: table-footer-group;
+        table-header-group	    display: table-header-group;
+        table-row-group	        display: table-row-group;
+        table-row	              display: table-row;
+        flow-root	              display: flow-root;
+        grid	                  display: grid;
+        inline-grid	            display: inline-grid;
+        contents	              display: contents;
+        list-item	              display: list-item;
+        hidden	                display: none;
+
+
+    -->
+    <div class="container">
+      When controlling the flow of text, using the CSS property
+      <span class="inline">display: inline</span>
+      will cause the text inside the element to wrap normally. While using the
+      property
+      <span class="inline-block text-orange-500">display: inline-block</span>
+      will wrap the element to prevent the text inside from extending beyond its
+      parent. Lastly, using the property
+      <span class="block text-emerald-400">display: block</span>
+      will put the element on its own line and fill its parent.
+    </div>
+
+    <div class="container bg-yellow-300">
+      <p>
+        Use the flow-root utility to create a block-level element with its own
+        block formatting context.
+      </p>
+      <div class="p-4">
+        <div class="flow-root ...">
+          <div class="my-4 ...">Well, let me tell you something, ...</div>
+        </div>
+        <div class="flow-root ...">
+          <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-slate-400">
+      <p>Flex Utility</p>
+      <div class="flex items-center">
+        <img src="./images/1.jpg" class="w-10 h-10 object-cover rounded-full" />
+        <div>
+          <strong>Andrew Alfred</strong>
+          <span>Technical advisor</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 cols + 3 rows -->
+    <div class="grid gap-4 grid-cols-3 grid-rows-3">
+      <p>Grid Utility</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        doloribus.
+      </p>
+      <button>Submit</button>
+    </div>
+
+    <div class="container bg-green-500">
+      <p>Inline Grid</p>
+      <span class="inline-grid grid-cols-3 gap-4">
+        <span>01</span>
+        <span>02</span>
+        <span>03</span>
+        <span>04</span>
+        <span>05</span>
+        <span>06</span>
+      </span>
+      <span class="inline-grid grid-cols-3 gap-4">
+        <span>01</span>
+        <span>02</span>
+        <span>03</span>
+        <span>04</span>
+        <span>05</span>
+        <span>06</span>
+      </span>
+    </div>
+
+    <div class="container">
+      <div class="flex">
+        <div class="flex-1 bg-red-500">01</div>
+        <div class="contents bg-stone-400">
+          <div class="flex-1.">02</div>
+          <div class="flex-1">03</div>
+        </div>
+        <div class="flex-1 bg-sky-400">04</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="table w-full">
+        <div class="table-header-group">
+          <div class="table-row">
+            <div class="table-cell text-left">Song</div>
+            <div class="table-cell text-left">Artist</div>
+            <div class="table-cell text-left">Year</div>
+          </div>
+        </div>
+        <div class="table-row-group">
+          <div class="table-row">
+            <div class="table-cell">
+              The Sliding Mr. Bones (Next Stop, Pottersville)
+            </div>
+            <div class="table-cell">Malcolm Lockyer</div>
+            <div class="table-cell">1961</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Witchy Woman</div>
+            <div class="table-cell">The Eagles</div>
+            <div class="table-cell">1972</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Shining Star</div>
+            <div class="table-cell">Earth, Wind, and Fire</div>
+            <div class="table-cell">1975</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex ...">
+      <div class="hidden">01</div>
+      <div>02</div>
+      <div>03</div>
+    </div>
+  </body>
+</html>

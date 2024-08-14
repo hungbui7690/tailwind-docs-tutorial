@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Align Self
+    - Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis.
+
+        self-auto	      align-self: auto;
+        self-start	    align-self: flex-start;
+        self-end	      align-self: flex-end;
+        self-center	    align-self: center;
+        self-stretch	  align-self: stretch;
+        self-baseline	  align-self: baseline;
+
+    -->
+
+    <p>items-stretch</p>
+    <div class="container bg-slate-200">
+      <div class="items-stretch flex h-56 w-32 gap-4 bg-emerald-200 flex-wrap">
+        <div class="self-auto bg-red-500 rounded-lg">01</div>
+        <div class="self-start bg-emerald-400 rounded-lg">02</div>
+        <div class="self-center bg-sky-400 rounded-lg">03</div>
+        <div class="self-end bg-yellow-500 rounded-lg">04</div>
+        <div class="self-stretch bg-orange-300 rounded-lg">05</div>
+        <div class="bg-violet-300 rounded-lg">06</div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

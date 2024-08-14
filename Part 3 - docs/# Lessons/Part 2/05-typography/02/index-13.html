@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Text Color
+    - Utilities for controlling the text color of an element.
+
+        text-inherit	        color: inherit;
+        text-current	        color: currentColor;
+        text-transparent	    color: transparent;
+        text-black	          color: rgb(0 0 0);
+        text-white	          color: rgb(255 255 255);
+        text-slate-50	        color: rgb(248 250 252);
+        text-slate-100	      color: rgb(241 245 249);
+        .
+        text-slate-950	      color: rgb(2 6 23);
+        text-gray-50	        color: rgb(249 250 251);
+        text-zinc-950
+        text-neutral-950	    color: rgb(10 10 10);
+        text-stone-950	      color: rgb(12 10 9);
+        text-red-950	        color: rgb(69 10 10);
+        text-orange-950	      color: rgb(67 20 7);
+        text-amber-950	      color: rgb(69 26 3);
+        text-yellow-950	      color: rgb(66 32 6);
+        text-lime-950	        color: rgb(26 46 5);
+        text-green-950	      color: rgb(5 46 22);
+        text-emerald-950	    color: rgb(2 44 34);
+        text-teal-950	        color: rgb(4 47 46);
+        text-cyan-950	        color: rgb(8 51 68);
+        text-sky-950	        color: rgb(8 47 73);
+        text-blue-950	        color: rgb(23 37 84);
+        text-indigo-950	      color: rgb(30 27 75);
+        text-violet-950	      color: rgb(46 16 101);
+        text-purple-950	      color: rgb(59 7 100);
+        text-fuchsia-950	    color: rgb(74 4 78);
+        text-pink-950	        color: rgb(80 7 36);
+        text-rose-950	        color: rgb(76 5 25);
+
+        theme: {
+          extend: {
+            colors: {
+              'regal-blue': '#243c5a',
+            },
+          }
+        }
+
+
+    -->
+
+    <div class="container">
+      <p class="text-sky-400">The quick brown fox</p>
+      <p class="text-sky-400/100">The quick brown fox</p>
+      <p class="text-sky-400/75">The quick brown fox</p>
+      <p class="text-sky-400/50">The quick brown fox</p>
+      <p class="text-sky-400/25">The quick brown fox</p>
+      <p class="text-sky-400/0">The quick brown fox</p>
+      <p class="text-blue-600/[.06]">The quick brown fox</p>
+      <p class="text-[#50d71e]">The quick brown fox</p>
+    </div>
+  </body>
+</html>

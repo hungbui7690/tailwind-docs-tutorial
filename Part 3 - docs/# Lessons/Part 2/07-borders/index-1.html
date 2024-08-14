@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Border Radius
+    - Utilities for controlling the border radius of an element.
+
+        from-inherit
+        from-current
+        from-transparent
+        from-black
+        from-white
+        from-slate-50
+        ....
+        from-0%
+        from-5%
+        ....
+        from-95%
+        from-100%
+        .... 
+        via-inherit
+        via-current
+        via-transparent
+        via-black
+        via-white
+        via-slate-50
+        ....
+        via-100%
+        to-inherit
+        to-current
+        to-transparent
+        to-black
+        to-white
+        to-slate-50
+        ....
+        to-100%
+
+    -->
+
+    <div class="container">
+      <div class="rounded h-12 w-12 bg-slate-400"></div>
+      <br />
+      <div class="rounded-md h-12 w-12 bg-slate-400"></div>
+      <br />
+      <div class="rounded-lg h-12 w-12 bg-slate-400"></div>
+      <br />
+      <div class="rounded-full h-12 w-12 bg-slate-400"></div>
+      <br />
+
+      <button class="rounded-full bg-cyan-300 p-4">Save Changes</button>
+      <button class="rounded-none bg-cyan-300 p-4">Save Changes</button>
+
+      <div class="rounded-t-lg h-12 w-12 bg-emerald-400"></div>
+      <br />
+      <div class="rounded-r-lg h-12 w-12 bg-emerald-400"></div>
+      <br />
+      <div class="rounded-b-md h-12 w-12 bg-emerald-400"></div>
+      <br />
+      <div class="rounded-l-sm h-12 w-12 bg-emerald-400"></div>
+      <br />
+
+      <div class="rounded-tl-lg h-12 w-12 bg-orange-400"></div>
+      <br />
+      <div class="rounded-tr-lg h-12 w-12 bg-orange-400"></div>
+      <br />
+      <div class="rounded-br-md h-12 w-12 bg-orange-400"></div>
+      <br />
+      <div class="rounded-lr-sm h-12 w-12 bg-orange-400"></div>
+      <br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Flex Shrink
+    - Utilities for controlling how flex items shrink.
+
+      shrink	  flex-shrink: 1;
+      shrink-0	flex-shrink: 0;
+
+    -->
+
+    <!-- Use shrink to allow a flex item to shrink if needed: -->
+    <div class="container">
+      <div class="flex">
+        <div class="flex-none bg-rose-500">01</div>
+        <div class="shrink bg-emerald-400">02</div>
+        <div class="flex-none bg-sky-500">03</div>
+      </div>
+    </div>
+
+    <!-- Use shrink-0 to prevent a flex item from shrinking: -->
+    <div class="container">
+      <div class="flex">
+        <div class="flex-1 bg-rose-500">01</div>
+        <div class="shrink-0 w-32 bg-emerald-400">02</div>
+        <div class="flex-1 bg-sky-500">03</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Text Overflow
+    - Utilities for controlling text overflow in an element.
+
+        truncate	        overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        text-ellipsis	    text-overflow: ellipsis;
+        text-clip	        text-overflow: clip;
+
+    -->
+
+    <div class="container">
+      <p class="truncate">
+        The longest word in any of the major English language dictionaries is
+        pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a
+        lung disease contracted from the inhalation of very fine silica
+        particles, specifically from a volcano; medically, it is the same as
+        silicosis.
+      </p>
+      <br /><br />
+      <p class="text-ellipsis overflow-hidden">
+        The longest word in any of the major English language dictionaries is
+        pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a
+        lung disease contracted from the inhalation of very fine silica
+        particles, specifically from a volcano; medically, it is the same as
+        silicosis.
+      </p>
+    </div>
+  </body>
+</html>

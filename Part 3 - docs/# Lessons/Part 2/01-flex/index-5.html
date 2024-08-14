@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Flex Grow
+    - Utilities for controlling how flex items grow.
+
+        grow	    flex-grow: 1;
+        grow-0	  flex-grow: 0;
+
+    -->
+
+    <!-- Use grow to allow a flex item to grow to fill any available space: -->
+    <div class="container">
+      <div class="flex">
+        <div class="flex-none bg-rose-500">01</div>
+        <div class="grow bg-emerald-400">02</div>
+        <div class="flex-none bg-sky-500">03</div>
+      </div>
+    </div>
+
+    <!-- Use grow-0 to prevent a flex item from growing: -->
+    <div class="container">
+      <div class="flex">
+        <div class="flex-none bg-rose-500">01</div>
+        <div class="grow-0 bg-emerald-400">02</div>
+        <div class="flex-none bg-sky-500">03</div>
+      </div>
+    </div>
+  </body>
+</html>

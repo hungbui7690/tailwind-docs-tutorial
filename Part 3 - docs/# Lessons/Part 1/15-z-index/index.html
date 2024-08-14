@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Z-Index
+    - Utilities for controlling the stack order of an element.
+
+        z-0	    z-index: 0;
+        z-10	  z-index: 10;
+        z-20	  z-index: 20;
+        z-30	  z-index: 30;
+        z-40	  z-index: 40;
+        z-50	  z-index: 50;
+        z-auto	z-index: auto;
+
+    -->
+    <div class="container relative">
+      <div class="z-40 rounded-full bg-rose-500 p-4 absolute left-0">05</div>
+      <div class="z-30 rounded-full bg-emerald-500 p-4 absolute left-8">04</div>
+      <div class="z-20 rounded-full bg-yellow-500 p-4 absolute left-16">03</div>
+      <div class="z-10 rounded-full bg-slate-400 p-4 absolute left-24">02</div>
+      <div class="z-0 rounded-full bg-sky-400 p-4 absolute left-32">01</div>
+      <div class="-z-50 rounded-full bg-indigo-400 p-4 absolute left-40">
+        -50
+      </div>
+    </div>
+  </body>
+</html>

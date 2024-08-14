@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Background Origin
+    - Utilities for controlling how an element's background is positioned relative to borders, padding, and content.
+
+        bg-origin-border	  background-origin: border-box;
+        bg-origin-padding	  background-origin: padding-box;
+        bg-origin-content	  background-origin: content-box;
+
+    -->
+
+    <div
+      class="bg-origin-border p-4 border-4 border-dashed w-48 h-48 bg-cover"
+      style="background-image: url('./images/1.jpg')"
+    ></div>
+    <br />
+    <div
+      class="bg-origin-padding p-4 border-4 border-dashed w-48 h-48 bg-cover"
+      style="background-image: url('./images/1.jpg')"
+    ></div>
+    <br />
+    <div
+      class="bg-origin-content p-4 border-4 border-dashed w-48 h-48 bg-cover"
+      style="background-image: url('./images/1.jpg')"
+    ></div>
+  </body>
+</html>

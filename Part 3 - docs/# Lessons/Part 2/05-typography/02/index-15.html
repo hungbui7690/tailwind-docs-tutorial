@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+    <style>
+      .container {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Text Decoration Style
+    - Utilities for controlling the style of text decorations.
+
+        decoration-solid	    text-decoration-style: solid;
+        decoration-double	    text-decoration-style: double;
+        decoration-dotted	    text-decoration-style: dotted;
+        decoration-dashed	    text-decoration-style: dashed;
+        decoration-wavy	      text-decoration-style: wavy;
+
+*****************************
+
+    Text Decoration Thickness
+    - Utilities for controlling the thickness of text decorations.
+
+        decoration-auto	      text-decoration-thickness: auto;
+        decoration-from-font	text-decoration-thickness: from-font;
+        decoration-0	        text-decoration-thickness: 0px;
+        decoration-1	        text-decoration-thickness: 1px;
+        decoration-2	        text-decoration-thickness: 2px;
+        decoration-4	        text-decoration-thickness: 4px;
+        decoration-8	        text-decoration-thickness: 8px;
+
+        theme: {
+          extend: {
+            textDecorationThickness: {
+              3: '3px',
+            }
+          }
+        }
+
+*****************************
+
+    Text Underline Offset
+    - Utilities for controlling the offset of a text underline.
+
+        underline-offset-auto	  text-underline-offset: auto;
+        underline-offset-0	    text-underline-offset: 0px;
+        underline-offset-1	    text-underline-offset: 1px;
+        underline-offset-2	    text-underline-offset: 2px;
+        underline-offset-4	    text-underline-offset: 4px;
+        underline-offset-8	    text-underline-offset: 8px;
+
+        theme: {
+          extend: {
+            textUnderlineOffset: {
+              3: '3px',
+            }
+          }
+        }
+
+    -->
+
+    <div class="container">
+      <p class="underline decoration-1">The quick brown fox</p>
+      <p class="underline decoration-2">The quick brown fox</p>
+      <p class="underline decoration-4">The quick brown fox</p>
+      <p class="underline decoration-[3px]">The quick brown fox</p>
+    </div>
+
+    <div class="container">
+      <p class="underline underline-offset-1">The quick brown fox</p>
+      <p class="underline underline-offset-2">The quick brown fox</p>
+      <p class="underline underline-offset-4">The quick brown fox</p>
+      <p class="underline underline-offset-8">The quick brown fox</p>
+      <p class="underline underline-offset-[3px]">The quick brown fox</p>
+    </div>
+  </body>
+</html>
